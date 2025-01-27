@@ -1,1 +1,69 @@
-/* место для вашего кода */
+.header {
+    padding: 0 50px;
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    max-height: 293px;
+}
+
+.logo-image {
+    width: 148px;
+    height: 105px;
+}
+
+.cover {
+    z-index: -1;
+    background-image: url("/images/cover.jpg");
+    background-size: cover;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover-overlay {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cover-title {
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    text-transform: uppercase;
+    padding: 165px 50px 0;
+    letter-spacing: 30px;
+    line-height: 115px;
+}
+
+.cover-accent-span {
+    display: block;
+}
+
+.second {
+    place-self: center;
+}
+
+.third {
+    place-self: end;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    line-height: 28px;
+}
+
+.description-text {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 30%;
+    font-size: 22px;
+}
