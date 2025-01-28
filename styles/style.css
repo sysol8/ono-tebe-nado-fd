@@ -63,7 +63,7 @@
     font-size: 100px;
     text-transform: uppercase;
     padding: 165px 50px 0;
-    line-height: 115px;
+    line-height: 125px;
 }
 
 .letter-spacing-extended {
@@ -95,4 +95,70 @@
 .bet-button {
     border: 1px solid white;
     padding: 12px 32px 11px 31px;
+}
+
+/* Начало стилей лотов */
+
+.lots {
+    margin: 180px 24px 120px;
+}
+
+.lots__heading {
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+.lots__card-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 25px;
+}
+
+.lots__card-list-item {
+    margin: 27px 0 30px;
+    color: white;
+}
+
+.card-link {
+    position: relative;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 40px;
+}
+
+.card_type_film {
+    background-image: url("/images/card-lot-01.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card_type_book {
+    background-image: url("/images/card-lot-02.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card_type_picture {
+    background-image: url("/images/card-lot-03.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card__title {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* Конец стилей лотов */
+
+.logo-white {
+    height: 240px;
+    width: 240px;
+    background-color: black;
+    border-radius: 50%;
 }

@@ -28,7 +28,7 @@
         </ul>
       </nav>
       <a class="logo-link">
-        <img class="logo-image" src="images/logo-black.svg" alt="Логотип">
+        <img class="logo-image" src="images/logo-black.svg" alt="Логотип, черная версия">
       </a>
       <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
@@ -62,13 +62,14 @@
       <!-- Конец обложки -->
       
       <section class="lots">
-        <h2>Лоты</h2>
-        <ul class="cards">
-          <li class="cards-item">
-            <a>
-              <article>
-                <h3>Фильм режиссёра, который бросил киношколу</h3>
-                <p>
+        <h2 class="lots__heading">Лоты</h2>
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a class="card-link"></a>
+            <div class="overlay"></div>
+              <article class="card card_type_film">
+                <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
@@ -76,13 +77,13 @@
               </article>
             </a>
           </li>
-          <li>
-            <a>
-              <article>
-                <h3>
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card card_type_book">
+                <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p>
+                <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
@@ -93,13 +94,13 @@
               </article>
             </a>
           </li>
-          <li>
-            <a>
-              <article>
-                <h3>
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card card_type_picture">
+                <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <p>
+                <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
@@ -109,10 +110,12 @@
             </a>
           </li>
         </ul>
-        <a>посмотреть больше</a>
+        <a class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about">
-        <div></div>
+        <div>
+          <img class="logo-white" src="/images/logo-white.svg" alt="Логотип, белая версия">
+        </div>
         <div>
           <h4></h4>
           <p></p>
