@@ -1,17 +1,44 @@
+/* Начало стилей шапки */
+
 .header {
+    font-size: 18px;
+    font-weight: normal;
     padding: 0 50px;
-    border-bottom: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    place-items: center;
-    max-height: 293px;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    min-height: 293px;
 }
 
-.logo-image {
-    width: 148px;
-    height: 105px;
+.header-navigation-list {
+    display: flex;
+    gap: 30px;
+    list-style-type: circle;
+    text-transform: lowercase;
 }
+
+.header-navigation-list-item:first-child {
+    list-style-type: none;
+}
+
+.link-active {
+    text-decoration: none;
+}
+
+.logo-link {
+    display: block;
+    width: 148px;
+}
+
+.address {
+    max-width: 240px;
+    justify-self: end;
+    font-style: normal;
+}
+
+/* Конец стилей шапки */
+
+/* Начало стилей обложки */
 
 .cover {
     z-index: -1;
@@ -23,47 +50,49 @@
     flex-direction: column;
 }
 
-.cover-overlay {
+.overlay {
     z-index: -1;
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.cover-title {
-    font-family: Raleway, Arial, sans-serif;
+.cover__title {
     font-weight: bold;
     font-size: 100px;
     text-transform: uppercase;
     padding: 165px 50px 0;
-    letter-spacing: 30px;
     line-height: 115px;
 }
 
-.cover-accent-span {
+.letter-spacing-extended {
+    letter-spacing: 25px;
+}
+
+.aligned-text {
     display: block;
 }
 
-.second {
-    place-self: center;
+.aligned-text_center {
+    justify-self: center;
 }
 
-.third {
-    place-self: end;
+.aligned-text_right {
+    justify-self: end;
 }
 
-.description {
+.cover__description {
+    text-transform: uppercase;
+    word-spacing: 20px;
     display: flex;
     justify-content: space-between;
+    margin: 106px 50px 50px;
     align-items: center;
-    padding: 0 50px;
-    line-height: 28px;
+    font-size: 22px;
 }
 
-.description-text {
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 30%;
-    font-size: 22px;
+.bet-button {
+    border: 1px solid white;
+    padding: 12px 32px 11px 31px;
 }
