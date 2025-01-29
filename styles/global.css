@@ -26,15 +26,15 @@ blockquote {
 }
 
 button {
-  padding: 0;
   border: none;
-  background: none;
+  padding: 0;
   color: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  text-transform: inherit;
-  cursor: pointer;
   font: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: inherit;
+  background: none;
+  cursor: pointer;
 }
 
 a {
