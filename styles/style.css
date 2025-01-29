@@ -3,18 +3,17 @@
 .header {
     font-size: 18px;
     font-weight: normal;
-    padding: 0 50px;
+    padding: 92px 50px 96px;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    min-height: 293px;
 }
 
 .header-navigation-list {
     display: flex;
-    gap: 30px;
     list-style-type: circle;
     text-transform: lowercase;
+    gap: 32px;
 }
 
 .header-navigation-list-item:first-child {
@@ -26,13 +25,18 @@
 }
 
 .logo-link {
-    display: block;
+    justify-content: center;
+    align-items: top;
+    display: flex;
     width: 148px;
+    height: 105px;
 }
 
 .address {
-    max-width: 240px;
+    min-width: 240px;
     font-style: normal;
+    line-height: 24px;
+    justify-self: end;
 }
 
 .address a {
@@ -44,13 +48,14 @@
 /* Начало стилей обложки */
 
 .cover {
-    z-index: -2;
+    z-index: -1;
     background-image: url("/images/cover.jpg");
     background-size: cover;
     color: white;
     position: relative;
     display: flex;
     flex-direction: column;
+    min-height: 757px;
 }
 
 .overlay {
@@ -64,15 +69,16 @@
 }
 
 .cover__title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 385px;
+    line-height: 115px;
     font-weight: bold;
     font-size: 100px;
     text-transform: uppercase;
-    padding: 165px 50px 0;
-    line-height: 125px;
-}
-
-.letter-spacing-extended {
-    letter-spacing: 25px;
+    margin: 165px 50px 106px;
+    letter-spacing: 30px;
 }
 
 .aligned-text {
@@ -80,11 +86,11 @@
 }
 
 .aligned-text_center {
-    justify-self: center;
+    align-self: center;
 }
 
 .aligned-text_right {
-    justify-self: end;
+    align-self: end;
 }
 
 .cover__description {
@@ -92,7 +98,7 @@
     word-spacing: 20px;
     display: flex;
     justify-content: space-between;
-    margin: 106px 50px 50px;
+    margin: 0 50px 50px;
     align-items: center;
     font-size: 22px;
 }
@@ -118,7 +124,7 @@
     flex-direction: row;
     list-style-type: none;
     gap: 25px;
-    margin: 27px 0 30px;
+    margin: 36px 0 30px;
 }
 
 .card {
@@ -131,17 +137,18 @@
     flex-direction: column;
     min-height: 596px;
     justify-content: space-between;
-    line-height: 24px;
 }
 
 .card__title {
     font-size: 22px;
+    line-height: 26px;
     text-transform: uppercase;
     text-decoration: underline;
 }
 
 .card__text {
     font-size: 20px;
+    line-height: 24px;
 }
 
 .card_type_film {
