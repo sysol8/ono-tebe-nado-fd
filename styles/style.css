@@ -32,8 +32,11 @@
 
 .address {
     max-width: 240px;
-    justify-self: end;
     font-style: normal;
+}
+
+.address a {
+    display: block;
 }
 
 /* Конец стилей шапки */
@@ -41,7 +44,7 @@
 /* Начало стилей обложки */
 
 .cover {
-    z-index: -1;
+    z-index: -2;
     background-image: url("/images/cover.jpg");
     background-size: cover;
     color: white;
@@ -56,6 +59,8 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
 }
 
 .cover__title {
@@ -105,7 +110,7 @@
 
 .lots__heading {
     text-transform: uppercase;
-    margin-left: 40px;
+    font-size: 40px;
 }
 
 .lots__card-list {
@@ -113,22 +118,28 @@
     flex-direction: row;
     list-style-type: none;
     gap: 25px;
-}
-
-.lots__card-list-item {
     margin: 27px 0 30px;
-    color: white;
-}
-
-.card-link {
-    position: relative;
 }
 
 .card {
+    z-index: -2;
+    position: relative;
+    color: white;
+    padding: 48px 40px;
+    width: 334px;
     display: flex;
     flex-direction: column;
+    min-height: 596px;
     justify-content: space-between;
-    padding: 48px 40px;
+    line-height: 24px;
+}
+
+.card__title {
+    font-size: 22px;
+}
+
+.card__text {
+    font-size: 20px;
 }
 
 .card_type_film {
@@ -154,11 +165,104 @@
     text-decoration: underline;
 }
 
+.lots__look-more-link,
+.lots__heading {
+    margin-left: 40px;
+}
+
+.lots__look-more-link {
+    text-transform: lowercase;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
 /* Конец стилей лотов */
 
-.logo-white {
-    height: 240px;
-    width: 240px;
+/* Начало стилей "about" */
+
+.about {
+    display: grid;
+    grid-template-columns: 334px 2fr;
+    margin: 0 24px 180px;
+}
+
+.about__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
     border-radius: 50%;
+    height: 240px;
+    width: 240px;
+    margin: 35px 0 0 47px;
 }
+
+.about__logo-image {
+    height: 114px;
+    width: 148px;
+}
+
+.about__title {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.about__column {
+    margin-top: 133px;
+}
+
+.about__text {
+    font-size: 20px;
+    line-height: 24px;
+    text-wrap: balance;
+}
+
+.about__text:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* Конец стилей "about" */
+
+/* Начало стилей футера */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 180px;
+    padding: 0 50px;
+}
+
+.footer__menu-list {
+    list-style-type: none;
+}
+
+.footer__menu-list-item {
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.footer__menu-link {
+    text-decoration: underline;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 48px;
+}
+
+.footer__social-list-item {
+    list-style-type: none;
+    height: 48px;
+    width: 48px;
+}
+
+/* Конец стилей футера */
+
+/* Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями? */
+
