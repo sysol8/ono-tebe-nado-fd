@@ -34,6 +34,7 @@ button {
   font-family: inherit;
   text-transform: inherit;
   cursor: pointer;
+  font: inherit;
 }
 
 a {
@@ -43,8 +44,4 @@ a {
 
 img {
   width: 100%;
-}
-
-button {
-  font: inherit;
 }

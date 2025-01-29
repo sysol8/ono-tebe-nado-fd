@@ -136,6 +136,8 @@
 
 .card__title {
     font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .card__text {
@@ -158,11 +160,6 @@
     background-image: url("/images/card-lot-03.jpg");
     background-size: cover;
     background-position: center;
-}
-
-.card__title {
-    text-transform: uppercase;
-    text-decoration: underline;
 }
 
 .lots__look-more-link,
