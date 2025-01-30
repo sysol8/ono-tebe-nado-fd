@@ -5,13 +5,12 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px 96px;
-  font-weight: normal;
   font-size: 18px;
 }
 
 .header-navigation-list {
   display: flex;
-  gap: 32px;
+  gap: 33px;
   text-transform: lowercase;
   list-style-type: circle;
 }
@@ -29,11 +28,12 @@
   justify-content: center;
   width: 148px;
   height: 105px;
+  
 }
 
 .address {
   justify-self: end;
-  min-width: 240px;
+  max-width: 240px;
   font-style: normal;
   line-height: 24px;
 }
@@ -48,19 +48,19 @@
 
 .cover {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   min-height: 757px;
   color: white;
-  background-image: url("/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -71,7 +71,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  min-height: 385px;
   margin: 165px 50px 106px;
   font-weight: bold;
   font-size: 100px;
@@ -86,6 +85,7 @@
 
 .aligned-text_center {
   align-self: center;
+  padding-left: 30px;
 }
 
 .aligned-text_right {
@@ -120,6 +120,7 @@
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 25px;
   margin: 36px 0 30px;
@@ -128,7 +129,7 @@
 
 .card {
   position: relative;
-  z-index: -2;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -136,6 +137,8 @@
   min-height: 596px;
   padding: 48px 40px;
   color: white;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__title {
@@ -151,21 +154,15 @@
 }
 
 .card_type_film {
-  background-image: url("/images/card-lot-01.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card_type_book {
-  background-image: url("/images/card-lot-02.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../images/card-lot-02.jpg");
 }
 
 .card_type_picture {
-  background-image: url("/images/card-lot-03.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 .lots__look-more-link,
@@ -233,8 +230,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  min-height: 180px;
-  padding: 0 50px;
+  padding: 0 50px 84px;
 }
 
 .footer__menu-list {
@@ -266,5 +262,3 @@
 }
 
 /* Конец стилей футера */
-
-/* Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями? */
