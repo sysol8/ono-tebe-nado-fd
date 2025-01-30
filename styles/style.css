@@ -28,18 +28,16 @@
   justify-content: center;
   width: 148px;
   height: 105px;
-  
 }
 
 .address {
-  justify-self: end;
   max-width: 240px;
   font-style: normal;
-  line-height: 24px;
+  line-height: 1.32;
 }
 
-.address a {
-  display: block;
+.header__address {
+  justify-self: end;
 }
 
 /* Конец стилей шапки */
@@ -54,8 +52,8 @@
   min-height: 757px;
   color: white;
   background-image: url("../images/cover.jpg");
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .overlay {
@@ -75,7 +73,6 @@
   font-weight: bold;
   font-size: 100px;
   line-height: 115px;
-  letter-spacing: 30px;
   text-transform: uppercase;
 }
 
@@ -83,9 +80,13 @@
   display: block;
 }
 
+.letter-spacing-extended {
+  margin-right: -30px;
+  letter-spacing: 30px;
+}
+
 .aligned-text_center {
   align-self: center;
-  padding-left: 30px;
 }
 
 .aligned-text_right {
@@ -99,7 +100,10 @@
   margin: 0 50px 50px;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 20px;
+}
+
+.cover__description-text {
+  word-spacing: 19px;
 }
 
 .bet-button {
@@ -114,17 +118,22 @@
 }
 
 .lots__heading {
+  margin-left: 40px;
   font-size: 40px;
   text-transform: uppercase;
 }
 
 .lots__card-list {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 25px;
-  margin: 36px 0 30px;
+  margin: 27px 0 30px;
   list-style-type: none;
+}
+
+.card-link {
+  text-decoration: none;
 }
 
 .card {
@@ -165,8 +174,7 @@
   background-image: url("../images/card-lot-03.jpg");
 }
 
-.lots__look-more-link,
-.lots__heading {
+.lots__look-more-link {
   margin-left: 40px;
 }
 
@@ -202,25 +210,25 @@
   height: 114px;
 }
 
+.about__column {
+  margin-top: 133px;
+}
+
 .about__title {
-  margin-bottom: 100px;
+  margin-bottom: 102px;
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
 }
 
-.about__column {
-  margin-top: 133px;
-}
-
 .about__text {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   text-wrap: balance;
 }
 
 .about__text:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 /* Конец стилей "about" */
@@ -231,6 +239,13 @@
   display: flex;
   justify-content: space-between;
   padding: 0 50px 84px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.footer__address a {
+  display: block;
+  line-height: 1.35;
 }
 
 .footer__menu-list {
